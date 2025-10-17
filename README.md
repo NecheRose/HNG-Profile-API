@@ -31,7 +31,7 @@ This project was built as part of **HNG13 Stage 0** to demonstrate backend devel
 ## 🌐 Live Demo
 
 **View the hosted project:**  
-[🔗 HNG-Profile-API]() 
+ [🔗 HNG-Profile-API]() 
 
 ---
 
@@ -101,16 +101,21 @@ http://localhost:5000/me
 
 ---
 
-## 📡 API Endpoint
-**GET** /me
+## 📡 API Endpoints
+
+**Endpoint**:
+```bash
+GET /me
+```
 Returns profile information with a dynamic cat fact.
 
 🧪 **Example Request**:
 ```bash
-curl http://localhost:5000/me
+http://localhost:5000/me
 ```
 
 ✅ **Example Response**:
+```
 {
   "status": "success",
   "user": {
@@ -121,6 +126,7 @@ curl http://localhost:5000/me
   "timestamp": "2023-10-15T12:34:56.789Z",
   "fact": "Cats can jump up to 6 times their length."
 }
+```
 
 ---
 
@@ -128,12 +134,14 @@ curl http://localhost:5000/me
 
 If the external Cat Facts API is unavailable, the API returns a fallback message:
 
+```
 {
   "status": "success",
   "user": { ... },
   "timestamp": "2025-10-17T13:09:00.000Z",
   "fact": "Cat fact temporarily unavailable. Did you know cats spend 70% of their lives sleeping?"
 }
+```
 
 ---
 
@@ -147,11 +155,14 @@ GET /health
 ```
 
 ✅ **Example Response**:
+
+```
 {
   "status": "success",
   "message": "API is running",
   "timestamp": "2025-10-17T14:15:00.000Z"
 }
+```
 
 **Purpose**
 
