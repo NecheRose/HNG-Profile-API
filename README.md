@@ -31,7 +31,7 @@ This project was built as part of **HNG13 Stage 0** to demonstrate backend devel
 ## 🌐 Live Demo
 
 **View the hosted project:**  
- [🔗 HNG-Profile-API]() 
+ [🔗 HNG-Profile-API](https://hng-profile-api-1.up.railway.app/me) 
 
 ---
 
